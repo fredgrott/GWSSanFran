@@ -1,37 +1,50 @@
 package gws.grottworkshop.gwssanfran;
 
 
+
+
+
+import com.actionbarsherlock.app.SherlockFragment;
+
 import uk.co.senab.bitmapcache.CacheableImageView;
 
-import android.annotation.SuppressLint;
+
+
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager.LayoutParams;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import android.widget.LinearLayout;
 
-@SuppressLint("ValidFragment")
-public class ImageSlideFragment extends Fragment {
-
+// TODO: Auto-generated Javadoc
+/**
+ * The Class SanFranSlideFragment.
+ */
+public class SanFranSlideFragment extends SherlockFragment {
+	
+	/** The image resource id. */
 	int imageResourceId;
 
-	public ImageSlideFragment(int i) {
+	/**
+	 * Instantiates a new san fran slide fragment.
+	 *
+	 * @param i the i
+	 */
+	public SanFranSlideFragment(int i) {
 		imageResourceId = i;
 	}
 	
-	@Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-    }
-	
-	public ImageSlideFragment() {
-		// TODO Auto-generated constructor stub
-	}
+	/**
+	 * On create view.
+	 *
+	 * @param inflater the inflater
+	 * @param container the container
+	 * @param savedInstanceState the saved instance state
+	 * @return the view
+	 * @see android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)
+	 */
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
@@ -47,4 +60,7 @@ public class ImageSlideFragment extends Fragment {
 
         return layout;
     }
+	
+	
+
 }
