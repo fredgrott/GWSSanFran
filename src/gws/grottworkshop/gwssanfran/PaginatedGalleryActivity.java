@@ -17,6 +17,8 @@ public class PaginatedGalleryActivity extends GWSActivity {
         
 		
 		List<String> list = new ArrayList<String>();
+		list.add("https://lh5.googleusercontent.com/-uY2FkZQYK_g/UWbL-STGVkI/AAAAAAAABD4/HYAFq5vMyIE/s975/Moonrise_Over_San_Francisco.jpg");
+		
      
 		for ( int i = 0 ; i < 10 ; i ++ ) {
 			list.add("http://www.gravatar.com/avatar/fc63e1912648ed92e560144b1152dc61?s=128&d=identicon&r=PG");
